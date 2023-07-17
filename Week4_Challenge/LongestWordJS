@@ -1,0 +1,20 @@
+function LongestWord(sen) {
+// code goes here  
+    let words = sen.split(" "); //split sen into words and store in the array words
+    let longestWord = ""; //set longestWord as an empty string
+  
+    for (let i = 0; i < words.length; i++) { //for each word at index i in the words array
+      let currentWord = words[i]; //set currentWord as the word at index i
+      if (currentWord.length > longestWord.length) { //if the length of currentWord is greater than the length of longestWord
+
+        longestWord = currentWord; //set longestWord as currentWord
+
+      }
+    }
+  
+    return longestWord;
+  }
+  
+// keep this function call here 
+console.log(LongestWord("I love pizza")); 
+  
